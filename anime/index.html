@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Info App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="input-section">
+            <label for="animeInput">Enter Anime Title:</label>
+            <div class="input-container">
+                <input type="text" id="animeInput" placeholder="e.g., Naruto">
+                <button onclick="fetchAnimeInfo()">Get Info</button>
+            </div>
+        </div>
+
+        <div id="anime-info">
+            <!-- Display anime information here -->
+        </div>
+
+        <button id="nextButton" onclick="getNextAnime()" style="display: none;">Next Related Anime</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
